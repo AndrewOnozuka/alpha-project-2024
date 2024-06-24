@@ -10,6 +10,8 @@ body {
     margin: 0; /* Ensure there's no margin around the body */
     padding: 20px; /* Add padding to the body for space around content */
     box-sizing: border-box; /* Include padding in the element's total width and height */
+    background-color: #FFEDD9;
+    /* outline: 1px solid blue; */
 }
 
 header {
@@ -17,10 +19,15 @@ header {
     margin-bottom: 20px;
 }
 
+h1 {
+    color: #726060;
+}
+
 .container {
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
+    gap: 20px; /* Add space between flex items */
 }
 
 .left {
@@ -55,26 +62,26 @@ header {
     margin-top: 10px;
 }
 
-.links {
+ul {
     list-style-type: none;
     padding: 0;
 }
 
-.links li {
+ul li {
     margin-bottom: 5px;
 }
 
-.links a {
+ul a {
     text-decoration: none;
     color: #007BFF;
 }
 
-.links a:hover {
+ul a:hover {
     text-decoration: underline;
 }
 
-/* Media query for mobile devices */
-@media (max-width: 768px) {
+/* Media query for screen sizes between 1366px and 1024px */
+@media screen and (max-width: 1366px) and (min-width: 1024px) {
     .container {
         flex-direction: column; /* Stack items vertically */
         align-items: center; /* Center the items */
@@ -88,5 +95,57 @@ header {
 
     .right {
         margin-top: 20px; /* Add margin for spacing */
+        /* outline: 1px solid blue; */
+    }
+}
+
+/* Media query for screen sizes between 1024px and 980px */
+@media screen and (max-width: 1024px) and (min-width: 980px) {
+    .container {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center the items */
+    }
+
+    .left, .right {
+        flex: none; /* Disable flex behavior */
+        max-width: 100%; /* Full width for both items */
+        padding-left: 0; /* Remove left padding */
+    }
+
+    .right {
+        margin-top: 20px; /* Add margin for spacing */
+    }
+}
+
+/* Media query for screen sizes between 980px and 645px */
+@media screen and (max-width: 980px) and (min-width: 645px) {
+    .container {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center the items */
+    }
+
+    .left, .right {
+        flex: none; /* Disable flex behavior */
+        max-width: 100%; /* Full width for both items */
+        padding-left: 0; /* Remove left padding */
+    }
+
+    .right {
+        margin-top: 20px; /* Add margin for spacing */
+        /* outline: 1px solid blue; */
+    }
+}
+
+/* Media query for mobile devices (max-width: 645px) */
+@media screen and (max-width: 645px) {
+    .container {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center the items */
+    }
+
+    .left, .right {
+        flex: none; /* Disable flex behavior */
+        max-width: 100%; /* Full width for both items */
+        padding-left: 0; /* Remove left padding */
     }
 }
