@@ -8,6 +8,8 @@ img[src] {
 body {
     font-family: Arial, sans-serif;
     margin: 0; /* Ensure there's no margin around the body */
+    padding: 20px; /* Add padding to the body for space around content */
+    box-sizing: border-box; /* Include padding in the element's total width and height */
 }
 
 header {
