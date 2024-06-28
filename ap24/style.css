@@ -7,10 +7,10 @@ img[src] {
 
 body {
     font-family: Arial, sans-serif;
-    margin: 0; /* Ensure there's no margin around the body */
-    padding: 20px; /* Add padding to the body for space around content */
-    box-sizing: border-box; /* Include padding in the element's total width and height */
-    background-color: #FFEDD9; /* Add background color */
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #FFEDD9;
 }
 
 header {
@@ -22,7 +22,7 @@ header {
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
-    gap: 20px; /* Add space between flex items */
+    gap: 20px;
 }
 
 .left {
@@ -58,8 +58,8 @@ header {
 }
 
 ul {
-    list-style-type: disc; /* Ensure list style is set to disc for bullet points */
-    padding-left: 40px; /* Add padding to ensure proper indentation */
+    list-style-type: disc;
+    padding-left: 40px;
 }
 
 ul li {
@@ -77,85 +77,112 @@ ul a:hover {
 
 table {
     width: 100%;
-    border-collapse: collapse; /* Ensure borders are collapsed into a single line */
-    margin-bottom: 20px; /* Add some space below the table */
+    border-collapse: collapse;
+    margin-bottom: 20px;
 }
 
 table, th, td {
-    border: 1px solid #000; /* Add border to table, header, and data cells */
-    padding: 8px; /* Add some padding for readability */
+    border: 1px solid #000;
+    padding: 8px;
 }
 
 th {
-    background-color: #D9B198; /* Optional: Add a background color to the table header */
-    text-align: left; /* Align text to the left in the header */
+    background-color: #D9B198;
+    text-align: left;
 }
-
 
 /* Media query for screen sizes between 1366px and 1024px */
 @media screen and (max-width: 1366px) and (min-width: 1024px) {
-    .container {
-        flex-direction: column; /* Stack items vertically */
-        align-items: center; /* Center the items */
+    /* .container {
+        flex-direction: column;
+        align-items: center;
     }
 
     .left, .right {
-        flex: none; /* Disable flex behavior */
-        max-width: 100%; /* Full width for both items */
-        padding-left: 0; /* Remove left padding */
+        flex: none;
+        max-width: 100%;
+        padding-left: 0;
     }
 
     .right {
-        margin-top: 20px; /* Add margin for spacing */
-    }
+        margin-top: 20px;
+    } */
 }
 
 /* Media query for screen sizes between 1024px and 980px */
 @media screen and (max-width: 1024px) and (min-width: 980px) {
-    .container {
-        flex-direction: column; /* Stack items vertically */
-        align-items: center; /* Center the items */
+    /* .container {
+        flex-direction: column;
+        align-items: center;
     }
 
     .left, .right {
-        flex: none; /* Disable flex behavior */
-        max-width: 100%; /* Full width for both items */
-        padding-left: 0; /* Remove left padding */
+        flex: none;
+        max-width: 100%;
+        padding-left: 0;
     }
 
     .right {
-        margin-top: 20px; /* Add margin for spacing */
-    }
+        margin-top: 20px;
+    } */
 }
 
 /* Media query for screen sizes between 980px and 645px */
 @media screen and (max-width: 980px) and (min-width: 645px) {
-    .container {
-        flex-direction: column; /* Stack items vertically */
-        align-items: center; /* Center the items */
+    /* .container {
+        flex-direction: column;
+        align-items: center;
     }
 
     .left, .right {
-        flex: none; /* Disable flex behavior */
-        max-width: 100%; /* Full width for both items */
-        padding-left: 0; /* Remove left padding */
+        flex: none;
+        max-width: 100%;
+        padding-left: 0;
     }
 
     .right {
-        margin-top: 20px; /* Add margin for spacing */
-    }
+        margin-top: 20px;
+    } */
 }
 
 /* Media query for mobile devices (max-width: 645px) */
 @media screen and (max-width: 645px) {
     .container {
-        flex-direction: column; /* Stack items vertically */
-        align-items: center; /* Center the items */
+        flex-direction: column;
+        align-items: center;
     }
 
     .left, .right {
-        flex: none; /* Disable flex behavior */
-        max-width: 100%; /* Full width for both items */
-        padding-left: 0; /* Remove left padding */
+        flex: none;
+        max-width: 100%;
+        padding-left: 0;
+    }
+
+    body {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    h4 {
+        font-size: 16px;
+    }
+
+    .verse {
+        font-size: 18px;
+    }
+
+    p, ul, blockquote, table {
+        font-size: 13px;
     }
 }
