@@ -75,6 +75,23 @@ ul a:hover {
     text-decoration: underline;
 }
 
+table {
+    width: 100%;
+    border-collapse: collapse; /* Ensure borders are collapsed into a single line */
+    margin-bottom: 20px; /* Add some space below the table */
+}
+
+table, th, td {
+    border: 1px solid #000; /* Add border to table, header, and data cells */
+    padding: 8px; /* Add some padding for readability */
+}
+
+th {
+    background-color: #D9B198; /* Optional: Add a background color to the table header */
+    text-align: left; /* Align text to the left in the header */
+}
+
+
 /* Media query for screen sizes between 1366px and 1024px */
 @media screen and (max-width: 1366px) and (min-width: 1024px) {
     .container {
