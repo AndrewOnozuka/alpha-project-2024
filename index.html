@@ -1,33 +1,38 @@
-<!DOCTYPE html>
-<html>
+<<!DOCTYPE html>
+<html lang="en">
 <head>
     <title>AP2024</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="icon" type="image/png" href="img/AP2024.jpg">
-    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Viewport meta tag -->
-    <style>
-        ul {
-            list-style-type: none; /* Remove bullets */
-            padding-left: 3vw;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-<header>
-    <h1>Alpha Project 2024</h1>
-</header>
-<body>
-    <img src="img/schedule.jpeg" alt="sched" class="logo"><br>
+<body class="bg-orange-100 text-gray-900 font-sans p-5">
 
-    <div class="container">
-        <div class="left">
-            <img src="img/AP2024.jpg" alt="aplogo" class="logo">
-        </div>
-        <div class="right">
-            <blockquote class="verse">
-                <i><sup>1</sup>Therefore, since we are surrounded by so great a cloud of witnesses, let us also lay aside every weight, and sin which clings so closely, and let us run with endurance the race that is set before us, <sup>2</sup>looking to Jesus, the founder and perfecter of our faith, who for the joy that was set before him endured the cross, despising the shame, and is seated at the right hand of the throne of God.</i>
-                <strong><cite><i>Hebrews 12:1-2 ESV</i></cite></strong>
+    <!-- Header -->
+    <header class="text-center mb-5">
+        <h1 class="text-3xl font-bold">Alpha Project 2024</h1>
+    </header>
+
+    <!-- Schedule Image -->
+    <img src="img/schedule.jpeg" alt="sched" class="w-full max-w-full block mb-5">
+
+    <!-- 45/55 Layout -->
+    <div class="flex flex-col md:flex-row items-start gap-6">
+        <!-- Left Section (45%) -->
+        <div class="w-full md:w-[45%]">
+            <img src="img/AP2024.jpg" alt="aplogo" class="w-full h-auto">
+            
+            <!-- Bible Verse -->
+            <blockquote class="italic mt-5 text-lg border-l-4 border-gray-500 pl-4">
+                <p><sup>1</sup>Therefore, since we are surrounded by so great a cloud of witnesses, let us also lay aside every weight, and sin which clings so closely, and let us run with endurance the race that is set before us, <sup>2</sup>looking to Jesus, the founder and perfecter of our faith, who for the joy that was set before him endured the cross, despising the shame, and is seated at the right hand of the throne of God.</p>
+                <strong class="block text-right mt-2"><cite>Hebrews 12:1-2 ESV</cite></strong>
             </blockquote>
-            <ul>
+        </div>
+
+        <!-- Right Section (55%) -->
+        <div class="w-full md:w-[55%] pl-6">
+            <!-- List of Links (No Bullet Points) -->
+            <ul class="list-none space-y-2 text-blue-600">
                 <li><a href="https://andrewonozuka.github.io/alpha-project-2024/01.html">AP #1 All of Life Rally | Hebrews 12 | Noah Lee</a></li>
                 <li><a href="https://andrewonozuka.github.io/alpha-project-2024/02.html">AP #2 Devotional Life | OIJA Hebrews 11:1-3 | Timothy Noritake</a></li>
                 <li><a href="https://andrewonozuka.github.io/alpha-project-2024/03.html">AP #3 Missional Life | Marking Out Your Story | Nathaniel Lightle</a></li>
